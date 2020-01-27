@@ -35,7 +35,7 @@ net = cv2.dnn.readNetFromCaffe(args["prototxt"], args["model"])
 # initialize the video stream, allow the cammera sensor to warmup,
 # and initialize the FPS counter
 print("[INFO] starting video stream...")
-vs = VideoStream(src="http://192.168.31.97:8080/video").start()
+vs = VideoStream(src="http://192.168.31.199:8080/video").start()
 time.sleep(2.0)
 fps = FPS().start()
 
